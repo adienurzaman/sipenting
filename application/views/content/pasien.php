@@ -697,12 +697,12 @@ if($this->session->flashdata('simpan_berhasil') == TRUE){
           extend: "collection",
                   text: "Export",
                   buttons: [
-                            // {
-                            //     extend: 'copyHtml5',
-                            //     exportOptions: {
-                            //         columns: [':not(:last-child)']
-                            //     }
-                            // },
+                            {
+                                extend: 'copyHtml5',
+                                exportOptions: {
+                                    columns: [':not(:last-child)']
+                                }
+                            },
                             {
                                 extend: 'excelHtml5',
                                 exportOptions: {

@@ -390,7 +390,7 @@ $versionApp = '3.0';
 
                   <input type="text" name="nik" class="form-control hideElement" id="nik" placeholder="Masukkan NIK Terdaftar" />
 
-                  <input type="email" name="email" class="form-control hideElement" id="email" placeholder="Masukkan Email Anda" readonly/>
+                  <input type="email" name="email" class="form-control hideElement" id="email" placeholder="Masukkan Email Anda" />
 
             
 

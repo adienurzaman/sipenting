@@ -269,7 +269,7 @@ class C_api extends CI_Controller {
                    'charset'   => 'utf-8',
                    'protocol'  => 'smtp',
                    'smtp_host' => 'ssl://mail.windstandrobotic.org',
-                   'smtp_user' => 'sipenting@windstandrobotic.org',    
+                   'smtp_user' => 'noreply@windstandrobotic.org',    
                    'smtp_pass' => 'adie@181097',                  
                    'smtp_port' => '465',
                    'crlf'      => "\r\n",
@@ -282,7 +282,7 @@ class C_api extends CI_Controller {
             // $this->email->initialize($config);
 
             // Email dan nama pengirim
-            $this->email->from('sipenting@windstandrobotic.org', '[no-reply] Developer | SIPENTING');
+            $this->email->from('noreply@windstandrobotic.org', '[no-reply] Developer | SIPENTING');
 
             // Email penerima
             $this->email->to($email); 

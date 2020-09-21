@@ -53,6 +53,28 @@
 
                     
                   </div>
+                 <!--  <li>
+                      <a>
+                        <span>
+                          <span>Sidia</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Pesan.................
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span>
+                          <span>Sidia</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Pesan.................
+                        </span>
+                      </a>
+                    </li> -->
                   <li> 
                     <div class='text-center'> <a class='text-warning' href="<?php echo site_url('c_stunting/riwayat'); ?>">
                     <strong>Lihat Semua Riwayat</strong>
@@ -66,7 +88,47 @@
 
               <?php } ?> 
 
-                
+                <!-- LANGUAGE -->
+<!-- 
+                <li role="presentation" class="dropdown">
+
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+
+                    <i class="fa fa-flag"></i>
+
+                    <span class="badge bg-green"><?php if($session['bahasa']=='english'){ echo 'ENG';}else{ echo 'INA';} ?></span>
+
+                  </a>
+ 
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu"> 
+                   <li>
+                      <a>
+                   <div class="text-left">
+                        <a class="text-warning" id="eng">
+                       <img src="<?php echo base_url('assets\images\lang\eng.png'); ?>" height="20" width="20">  English
+                        </a>
+                      </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                       <div class="text-left" id="ina">
+                        <a id="indonesian" class="text-warning">
+                        
+                         <img src="<?php echo base_url('assets\images\lang\ina.png'); ?>" height="20" width="20"> Indonesian
+                        </a>
+                      </div>
+                      </a>
+                    </li>
+                    
+                    <li>
+                     
+                    </li>
+                  </ul>
+                </li>     
+ -->
+
+                  <!-- LANGUAGE -->     
 
               </ul>
 

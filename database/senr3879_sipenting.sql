@@ -1,10 +1,10 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.4
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 13, 2020 at 01:05 AM
--- Server version: 10.1.44-MariaDB-cll-lve
+-- Generation Time: Aug 26, 2020 at 05:53 AM
+-- Server version: 10.1.45-MariaDB-cll-lve
 -- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -41,18 +41,24 @@ CREATE TABLE `akun` (
 --
 
 INSERT INTO `akun` (`id_akun`, `email`, `nik`, `password`, `level`) VALUES
-(2, 'adieimannurzaman@gmail.com', '3210061810970001', '21232f297a57a5a743894a0e4a801fc3', 'pasien'),
+(2, 'adieimannurzaman@gmail.com', '3210061810970001', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
 (3, 'dsuryaheriyana@gmail.com', '3210191212950001', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
-(10, 'wrohmanudin@gmail.com', '3210130212960001', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
+(10, 'dadan@gmail.com', '3210130212960001', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
 (11, 'dsheriyana@gmail.com', '3210191212950002', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
 (12, 'wrohmanudin@gmail.com', '3210130405060001', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
 (13, 'himatif@unma.ac.id', '3210191212950005', '21232f297a57a5a743894a0e4a801fc3', 'pasien'),
 (14, 'dinonet@gmail.com', '3210131213140001', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
-(15, 'ronic1996@gmail.com', '3210211001960081', '7488e331b8b64e5794da3fa4eb10ad5d', 'admin'),
+(15, 'ronic@gmail.com', '3210211001960081', '7488e331b8b64e5794da3fa4eb10ad5d', 'admin'),
 (16, 'aaisyah@mail.com', '3210130405071235', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
 (17, 'azizah@mail.com', '3210130405071233', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
-(18, 'dekilanak@gmail.com', '3210211001960091', '7488e331b8b64e5794da3fa4eb10ad5d', 'admin'),
-(19, 'dede@gmail.com', '3210061810970123', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien');
+(18, 'dede@gmail.com', '3210061810970123', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
+(19, 'ronic1996@gmail.com', '3210211001960082', '7488e331b8b64e5794da3fa4eb10ad5d', 'admin'),
+(21, 'anisa@mail.com', '3210061810970111', '7488e331b8b64e5794da3fa4eb10ad5d', 'pasien'),
+(22, 'anandashaqueenah@gmail.com', '3210054905200001', '9e0203f005528b1e138aa54da3858b01', 'pasien'),
+(23, 'anandarafa@gmail.com', '3210051012190001', '0240c7603624c452e476924a7080d126', 'pasien'),
+(24, 'tristan@gmail.com', '3210052401200001', 'd9118cf890e81684b5907de2d5edfaf7', 'pasien'),
+(25, 'alif@gmail.com', '3210052906200001', '320660612461ad30ad07426d6f1755a8', 'pasien'),
+(26, 'alvino@gamil.com', '3210051006850001', '76f04069e1569d57f039f9e4c4e5329e', 'pasien');
 
 -- --------------------------------------------------------
 
@@ -45054,7 +45060,7 @@ CREATE TABLE `kondisi` (
 --
 
 INSERT INTO `kondisi` (`id_kondisi`, `status`) VALUES
-(1, 0);
+(1, 1);
 
 -- --------------------------------------------------------
 
@@ -45094,10 +45100,16 @@ CREATE TABLE `pasien` (
 --
 
 INSERT INTO `pasien` (`nik`, `nkk`, `nama_pasien`, `tgllahir`, `jk`, `rtrw`, `blok`, `provinsi`, `kabupaten`, `kecamatan`, `kelurahan`, `notelp`) VALUES
-('3210061810970001', '3210061425360002', 'Putra Maekel Simanjutak', '1997-10-18', 'L', '004/002', 'Anggrawati', '32', '3210', '321006', '3210062004', '085624712566'),
-('3210061810970123', '3210061810970120', 'Dede Hanafi', '2019-07-01', 'L', '11/12', 'mawar', '32', '3210', '321021', '3210212007', '083824417888'),
-('3210130212960001', '3210131013960001', 'Dadan Somadani', '2019-03-27', 'L', '001/003', 'Dusun 1', '32', '3210', '321013', '3210132006', '081223084272'),
-('3210130405060001', '3210131013960001', 'Firmansyah', '2019-09-10', 'P', '001/002', 'Blok simpeureun', '32', '3210', '321007', '3210071007', '081223084272'),
+('3210051006850001', '3210052901200014', 'Alvino Septian Maulana', '2020-06-29', 'L', '01/03', 'Blok Selasa', '32', '3210', '321005', '3210052009', '085213985650'),
+('3210051012190001', '3210052806110003', 'Ananda Rafa Putra Nugraha', '2019-12-10', 'L', '002/001', 'Blok Rabu', '32', '3210', '321005', '3210052009', '081330870130'),
+('3210052401200001', '3210050207180001', 'Tristan Farrel Anindito', '2020-01-24', 'L', '002/001', 'Blok rabu', '32', '3210', '321005', '3210052009', '0838244191990'),
+('3210052906200001', '3210052906200001', 'Alif Fikri Ahmadi', '2020-06-29', 'L', '01/03', 'Blok Selasa', '32', '3210', '', '', '0852200965'),
+('3210054905200001', '3210051403120001', 'Ananda Shaqueena Humaira', '2020-05-09', 'P', '002/001', 'Blok rabu', '32', '3210', '321005', '3210052009', '081220870130'),
+('3210061810970001', '3210061425360002', 'Anisa Putri Handika', '2020-05-26', 'P', '004/002', 'Mekarwati', '32', '3210', '321006', '3210062004', '085624712566'),
+('3210061810970111', '3210061810970112', 'Caca Hanum', '2020-02-01', 'P', '1/2', 'Maja', '32', '3210', '321006', '3210062008', '08322233222'),
+('3210061810970123', '3210061810970120', 'A Dede Hanafi', '2020-05-26', 'L', '1/1', 'Mawar', '32', '3210', '321006', '3210062018', '083824417890'),
+('3210130212960001', '3210131013960001', 'Dadan Somadani', '2020-02-01', 'L', '001/003', 'Dusun 1', '32', '3210', '321013', '3210132006', '081223084272'),
+('3210130405060001', '3210131013960001', 'Firmansyah', '2018-10-01', 'L', '001/002', 'Blok simpeureun', '32', '3210', '321007', '3210071007', '081223084272'),
 ('3210130405071233', '3210130405071234', 'Azizah', '1981-12-27', 'P', '1/2', 'Malarhayu', '32', '3210', '321021', '3210212001', '083824419198'),
 ('3210130405071235', '3210130405071234', 'Aisyah Azahra', '2019-02-08', 'P', '1/2', 'Malarhayu', '32', '3210', '321021', '3210212001', '083824419197'),
 ('3210131213140001', '3210131213140001', 'Yukii', '2019-10-02', 'P', '004/002', 'Blok sabtu', '32', '3210', '321007', '', '08132154740'),
@@ -45105,7 +45117,7 @@ INSERT INTO `pasien` (`nik`, `nkk`, `nama_pasien`, `tgllahir`, `jk`, `rtrw`, `bl
 ('3210191212950002', '3210191212950010', 'Diana', '2019-11-01', 'P', '001/007', 'Tajurwangi', '32', '3210', '321019', '3210192009', '085316543065'),
 ('3210191212950005', '3210191212950011', 'Surya Ramadhan', '2018-02-28', 'L', '001/001', 'Majalengka', '15', '1505', '150506', '1505062009', '08555'),
 ('3210211001960081', '3210211001960081', 'Roni', '2000-01-10', 'L', '02/11', 'Indah', '32', '3210', '321021', '3210212001', '083824419167'),
-('3210211001960091', '3210211001960091', 'Denira Kiki zahratunissa', '2000-10-10', 'P', '1/2', 'Melati', '32', '', '', '', '083824419781');
+('3210211001960082', '3210211001960082', 'Cecep Roni', '1996-03-01', 'L', '1/2', 'Malarhayu', '32', '3210', '321021', '3210212001', '083824419197');
 
 -- --------------------------------------------------------
 
@@ -45188,8 +45200,27 @@ INSERT INTO `stunting` (`id_stunting`, `nik`, `umur`, `tinggi_badan`, `berat_bad
 (28, '3210130405071235', 12, 76, 19, '2020-02-09', 'Status Pertumbuhan : Normal', 0),
 (29, '3210191212950001', 7, 76, 21, '2020-02-09', 'Status Pertumbuhan : Over', 0),
 (30, '3210130405060001', 5, 88, 0, '2020-02-11', 'Status Pertumbuhan : Over', 1),
-(35, '3210061810970123', 7, 68, 8, '2020-02-14', 'Status Pertumbuhan : Normal', 1),
-(36, '3210061810970123', 7, 63, 7, '2020-02-14', 'Status Pertumbuhan : Kurang (Stunting)', 1);
+(31, '3210061810970123', 7, 63, 9, '2020-02-19', 'Status Pertumbuhan : Kurang (Stunting)', 1),
+(33, '3210130405071235', 16, 78, 9, '2020-06-02', 'Status Pertumbuhan : Normal', 1),
+(34, '3210061810970001', 6, 62, 7, '2020-06-02', 'Status Pertumbuhan : Normal', 1),
+(35, '3210061810970001', 6, 59, 6, '2020-06-02', 'Status Pertumbuhan : Kurang (Stunting)', 1),
+(36, '3210061810970001', 6, 61, 8, '2020-06-02', 'Status Pertumbuhan : Normal', 1),
+(37, '3210061810970001', 6, 59, 8, '2020-06-02', 'Status Pertumbuhan : Kurang (Stunting)', 1),
+(38, '3210061810970111', 4, 59, 0, '2020-06-04', '', 0),
+(39, '3210061810970123', 11, 59, 0, '2020-06-04', '', 0),
+(40, '3210130405060001', 8, 59, 0, '2020-06-04', '', 0),
+(41, '3210130405060001', 1, 59, 0, '2020-06-04', '', 1),
+(42, '3210130405060001', 21, 93, 0, '2020-07-27', 'Status Pertumbuhan : Tinggi', 0),
+(43, '3210061810970001', 2, 52, 0, '2020-07-27', 'Status Pertumbuhan : Kurang (Stunting)', 1),
+(44, '3210061810970001', 2, 81, 0, '2020-07-29', 'Status Pertumbuhan : Over', 1),
+(45, '3210054905200001', 2, 58, 5, '2020-07-29', 'Status Pertumbuhan : Normal', 1),
+(46, '3210051012190001', 7, 69, 11, '2020-07-29', 'Status Pertumbuhan : Normal', 1),
+(47, '3210052401200001', 6, 66, 9, '2020-07-29', 'Status Pertumbuhan : Normal', 0),
+(48, '3210052401200001', 6, 66, 8, '2020-07-29', 'Status Pertumbuhan : Normal', 0),
+(49, '3210052906200001', 1, 55, 4, '2020-07-29', 'Status Pertumbuhan : Normal', 0),
+(50, '3210052906200001', 1, 55, 4, '2020-07-29', 'Status Pertumbuhan : Normal', 0),
+(51, '3210051006850001', 1, 53, 5, '2020-07-29', 'Status Pertumbuhan : Normal', 1),
+(52, '3210051006850001', 1, 54, 4, '2020-07-29', 'Status Pertumbuhan : Normal', 1);
 
 -- --------------------------------------------------------
 
@@ -45208,7 +45239,7 @@ CREATE TABLE `temp` (
 --
 
 INSERT INTO `temp` (`id_temp`, `berat`, `tinggi_anak`) VALUES
-(1, 17.65, 93);
+(1, 0.57, 50);
 
 --
 -- Indexes for dumped tables
@@ -45283,7 +45314,7 @@ ALTER TABLE `temp`
 -- AUTO_INCREMENT for table `akun`
 --
 ALTER TABLE `akun`
-  MODIFY `id_akun` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_akun` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `kondisi`
@@ -45301,7 +45332,7 @@ ALTER TABLE `notif`
 -- AUTO_INCREMENT for table `stunting`
 --
 ALTER TABLE `stunting`
-  MODIFY `id_stunting` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id_stunting` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `temp`

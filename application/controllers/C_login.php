@@ -45,7 +45,7 @@ class C_login extends CI_Controller
 
 		{
 
-			redirect('c_dashboard');	
+			redirect('c_dashboard','refresh');	
 
 		}
 
@@ -79,13 +79,13 @@ class C_login extends CI_Controller
 
         			$this->session->set_flashdata('login_berhasil','Selamat Datang '.$nama.'. Anda berhasil Log-in');
 
-        			redirect('c_dashboard');
+        			redirect('c_dashboard','refresh');
 
         		    }else{
 
         		        $this->session->set_flashdata('password_salah','Segera Hubungi Admin Sistem. PASSWORD yang anda masukan TIDAK TEPAT');
 
-        			    redirect('c_login');
+        			    redirect('c_login','refresh');
 
         		    }
 
@@ -95,7 +95,7 @@ class C_login extends CI_Controller
 
                     $this->session->set_flashdata('error_login','Login Gagal');
 
-        		    redirect('c_login');    
+        		    redirect('c_login','refresh');    
 
         		}
 

@@ -96,7 +96,7 @@ $hari_ini = $seminggu[$hari];
 
       <br/>
 
-      <p align=center>Hai <b><?php echo ucwords($session['nama_pasien']);?></b>, selamat datang di halaman Dashboard SIPENTING. 
+      <p align=center>Hai <b><?php echo ucwords($session['level']);?></b>, selamat datang di halaman Dashboard SIPENTING. 
 
         <br/>Silahkan klik menu untuk mengelola sistem Aplikasi Ini. <br /> <b><?php echo $hari_ini;?>, <?php echo date('d-m-Y');?></b>
 

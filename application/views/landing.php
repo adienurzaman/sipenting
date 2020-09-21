@@ -105,6 +105,59 @@
 	</section>
 	<!-- End About Area -->
 
+	<!-- Start Footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Menu</h4>
+					<ul>
+						<li><a href="<?php echo site_url('c_login');?>">Login</a></li>
+						<li><a href="<?php echo site_url('c_login');?>">Register</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					
+				</div>
+		
+			<div class="col-lg-4 col-md-6 single-footer-widget">
+					<h4>Newsletter</h4>
+					<p>Untuk mendapatkan update dari kami,</p>
+					<div class="form-wrap">
+						<form method="post" action="<?php echo site_url('c_api/add_subs'); ?>" class="form-inline">
+							
+							<input class="form-control" name="email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+							 required type="email">
+
+							<input class="form-control" name="nama" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name '"
+							 required="" type="text">
+
+							<button type="submit" class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
+							<div style="position: absolute; left: -5000px;">
+								<input name="newsletter" tabindex="-1" value="" type="text">
+							</div>
+
+							<div class="info"></div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer-bottom row align-items-center">
+				<p class="footer-text m-0 col-lg-8 col-md-12">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> SIPENTING
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+
 	<!-- ####################### Start Scroll to Top Area ####################### -->
 	<div id="back-top">
 		<a title="Go to Top" href="#"></a>

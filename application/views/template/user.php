@@ -21,7 +21,7 @@
 
                 <span>Selamat Datang,</span>
 
-                <h2><?php echo ucwords($session['nama_pasien']); ?></h2>
+                <h2><?php echo ucwords($session['level']); ?></h2>
 
               </div>
 
